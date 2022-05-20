@@ -93,31 +93,4 @@ export default class AccountsDatatable extends LightningElement {
 			})
 		}
 	}
-
-    /*handleRowAction(event) {
-        if (event.detail.action.name === 'Delete') {
-            const recordId = event.detail.row.Id;
-            deleteRecord(recordId)
-            .then(() => {
-                refreshApex(this.wiredAccountResult);
-                this.dispatchEvent(
-                    new ShowToastEvent({
-                        title: 'Success',
-                        message: 'Account deleted',
-                        variant: 'success'
-                    })
-                );
-                
-            })
-            .catch(error => {
-                this.dispatchEvent(
-                    new ShowToastEvent({
-                        title: 'Error deleting record',
-                        message: error.body.message,
-                        variant: 'error'
-                    })
-                );
-            })  
-        }
-    }*/
 }
